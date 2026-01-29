@@ -37,7 +37,7 @@ This project demonstrates data cleaning, engineering and exploratory analysis ap
 The raw dataset presented a paradigmatic case of real-world data complexity with multiple systematic issues:
 
 #### **Critical Data Quality Issues Identified:**
-1. **Semantic Ambiguity in Categorical Variables**
+1. **SCategorical Variables**
    - Sex variable encoded numerically: `{1, 2}` instead of `{Male, Female}`
    - This encoding mismatch caused initial visualization artifacts where demographic bars appeared at zero
    - Weight categories inconsistently labeled: `"80-100kg"` vs `"40-60kg"` without standardized formatting
@@ -81,7 +81,7 @@ Our prevalence analysis follows epidemiological best practices:
 4. **Confounding Assessment**: Evaluating potential bias sources
 
 ### **Visualization 1: Demographic Landscape**
-The foundational visualization establishes the analytical cohort's characteristics.
+The foundational visualization establishes the analytical cohort's characteristics, particulary age and sex on viral load suppression
 
 ![Demographic Distribution](p1.png)
 
@@ -95,12 +95,12 @@ The foundational visualization establishes the analytical cohort's characteristi
 This visualization serves as the analytical "baseline map," establishing the demographic terrain upon which subsequent prevalence patterns are overlaid. The clear categorical labeling (Male/Female) demonstrates successful resolution of the initial data quality challenge where numerical encoding caused visualization artifacts.
 
 ### **Visualization 2: Weight-Based Risk Stratification**
-This analysis explores the relationship between body weight categories and viral load suppression outcomes.
+This analysis explores the interactive relationship between body weight categories and educational level on viral load suppression outcomes.
 
 ![Weight Category Analysis](p2.png)
 
 **Key Analytical Insights:**
-- **Dose-Response Assessment**: Examines whether weight categories show linear or threshold relationships with outcomes
+- **Dose-Response Assessment**: Examines whether the interaction of weight categories and educational level show linear or threshold relationships with outcomes
 - **Interaction Effects**: Suggests potential interactions between weight categories and other clinical factors
 - **Clinical Relevance**: Identifies weight ranges that may require specific monitoring protocols
 - **Public Health Implications**: Informs nutritional support program targeting
@@ -124,42 +124,32 @@ A comprehensive view integrating multiple risk factors to identify complex inter
 **Complex Pattern Recognition:**
 This visualization moves beyond simple bivariate relationships to capture the multidimensional nature of viral load suppression, acknowledging that real-world health outcomes rarely result from single factors operating in isolation.
 
-### **Visualization 4: Temporal Treatment Patterns**
-Analysis of how treatment duration and timing relate to suppression outcomes.
+### **Visualization 4: Facility type and Age groups Patterns**
+This analysis explores the interactive relationship between age groups and facility type on viral load suppression outcomes.
 
 ![Temporal Analysis](p4.png)
 
 **Key Analytical Insights:**
-- **Critical Timepoints**: Identifies specific treatment durations associated with outcome changes
-- **Retention Patterns**: Reveals when patients may be at highest risk of dropping out of care
+- **Critical Timepoints**: Identifies specific interactions of age groups and facility types associated with outcome changes
+- **Retention Patterns**: Reveals which patients and how they get help, may be at highest risk of treatment failure
 - **Intervention Timing**: Suggests optimal windows for supportive interventions
-- **Longitudinal Trends**: Shows how outcomes evolve over treatment duration
+- **Longitudinal Trends**: Shows how outcomes evolve over treatment age groups and the type of health institutions they attend
 
 **Clinical Workflow Implications:**
 This temporal analysis provides actionable intelligence for clinical program design, suggesting when during the treatment journey additional support may be most beneficial.
 
-### **Visualization 5: Geographic & Facility Variation**
-Examination of spatial patterns in treatment outcomes across different locations.
-
-![Geographic Distribution](p5.png)
-
-**Key Analytical Insights:**
-- **Health System Performance**: Reveals facility-level variations in treatment quality
-- **Equity Assessment**: Identifies geographic disparities in outcomes
-- **Resource Allocation**: Guides targeting of quality improvement efforts
-- **Contextual Factors**: Suggests environmental or systemic influences on outcomes
 
 **Policy Relevance:**
 The geographic variation visualization moves analysis from individual patient factors to health system characteristics, recognizing that treatment success depends on both clinical and contextual factors.
 
 ### **Visualization 6: Integrated Epidemiological Summary**
-Comprehensive synthesis of all analytical dimensions into a unified epidemiological portrait.
+This analysis explores the effect of gender and occupation on viral load suppression outcomes.
 
 ![Integrated Analysis](p6.png)
 
 **Key Analytical Insights:**
-- **Holistic Pattern Recognition**: Integrates demographic, clinical, temporal, and geographic dimensions
-- **System-Level Understanding**: Provides complete picture of the epidemic's characteristics
+- **Holistic Pattern Recognition**: Integrates demographic and geographic dimensions
+- **System-Level Understanding**: Provides a good picture of the epidemic's characteristics
 - **Strategic Planning**: Informs comprehensive public health strategy development
 - **Monitoring Framework**: Establishes baseline for ongoing surveillance
 
